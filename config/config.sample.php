@@ -777,6 +777,14 @@ $CONFIG = array(
 'enable_previews' => true,
 
 /**
+ * Location of the thumbnails folder, defaults to `data/$user/thumbnails` where
+ * `$user` is the current user. When specified, the format will change to
+ * `$previews_path/$user` where `$previews_path` is the configured previews directory
+ * and `$user` is the user.
+ */
+'previews_path' => '',
+
+/**
  * The maximum width, in pixels, of a preview. A value of `null` means there
  * is no limit.
  */
